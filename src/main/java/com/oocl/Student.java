@@ -2,18 +2,18 @@ package com.oocl;
 
 public class Student extends Person {
 
-    private int klass;
+    private int klassNumber;
 
     @Override
     public String introduce() {
-        return String.format("My name is %s. I am %s years old. I am a student of class %s. Coding for the glory of OOCL.", this.getName(), this.getAge(), this.klass);
+        return String.format("My name is %s. I am %s years old. I am a student of class %s. Coding for the glory of OOCL.", this.getName(), this.getAge(), this.klassNumber);
     }
 
     public int getKlass() {
-        return klass;
+        return klassNumber;
     }
 
     public void setKlass(int klass) {
-        this.klass = klass;
+        this.klassNumber = klass;
     }
 }

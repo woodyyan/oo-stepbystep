@@ -9,11 +9,11 @@ public class Student extends Person {
         return String.format("My name is %s. I am %s years old. I am a student of class %s. Coding for the glory of OOCL.", this.getName(), this.getAge(), this.klassNumber);
     }
 
-    public int getKlass() {
+    public int getKlassNumber() {
         return klassNumber;
     }
 
-    public void setKlass(int klass) {
+    public void setKlassNumber(int klass) {
         this.klassNumber = klass;
     }
 }

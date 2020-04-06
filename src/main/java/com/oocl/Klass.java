@@ -7,6 +7,7 @@ public class Klass {
     private int number;
     private List<Student> students;
     private Student leader;
+    private Teacher teacher;
 
     public Klass(int number) {
         this.number = number;
@@ -19,6 +20,14 @@ public class Klass {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    public void assignTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
+    public boolean isTeacherOfThisClass(Teacher teacher) {
+        return this.teacher == teacher;
     }
 
     public void appendMember(Student student) {

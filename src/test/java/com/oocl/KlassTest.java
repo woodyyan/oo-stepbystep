@@ -32,4 +32,12 @@ public class KlassTest {
         klass.assignLeader(student);
         Assert.assertFalse(klass.isLeader(student));
     }
+
+    @Test
+    public void should_assign_teacher_given_teacher() {
+        Klass klass = new Klass(2);
+        Teacher teacher = new Teacher();
+        klass.assignTeacher(teacher);
+        Assert.assertTrue(klass.isTeacherOfThisClass(teacher));
+    }
 }
